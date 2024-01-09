@@ -2,3 +2,19 @@
 @use "layout";
 @use "base";
 @use "components";
+
+@media (width >= 1024px) {
+  .one {
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: left;
+    padding-inline: 32px;
+  }
+}
+
+@media (width >= 1280px) {
+  .one {
+    padding-inline: 165px;
+    justify-content: center;
+  }
+}

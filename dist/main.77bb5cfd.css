@@ -21,6 +21,17 @@ nav menu li {
     padding-block-start: 48px;
   }
 }
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav menu li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 menu {
   position: absolute;
 }
@@ -161,6 +172,20 @@ textarea:not([rows]) {
   menu li {
     width: 111px;
     min-height: 40px;
+  }
+}
+@media (width >= 1024px) {
+  .one {
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: left;
+    padding-inline: 32px;
+  }
+}
+@media (width >= 1280px) {
+  .one {
+    padding-inline: 165px;
+    justify-content: center;
   }
 }
 
