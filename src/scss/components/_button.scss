@@ -1,0 +1,20 @@
+.menuButton {
+  background-color: transparent;
+  border: none;
+}
+
+menu {
+  position: absolute;
+}
+
+menu[aria-expanded="false"] {
+  visibility: hidden;
+}
+
+menu[aria-expanded="true"] {
+  visibility: visible;
+}
+
+.row a {
+  display: inline-block;
+}
