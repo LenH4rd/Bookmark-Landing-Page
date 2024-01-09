@@ -8,4 +8,17 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  & menu li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (width >= 1440px) {
+  header {
+    padding-inline: 165px;
+    padding-block-start: 48px;
+  }
 }

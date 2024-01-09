@@ -1,6 +1,10 @@
+@use "../abstracts/variables" as *;
+
 body {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  font-family: $ff-body;
+  font-size: $font-size;
 }

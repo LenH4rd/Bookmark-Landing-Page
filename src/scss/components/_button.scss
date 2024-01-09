@@ -3,18 +3,11 @@
   border: none;
 }
 
-menu {
-  position: absolute;
-}
-
-menu[aria-expanded="false"] {
-  visibility: hidden;
-}
-
-menu[aria-expanded="true"] {
-  visibility: visible;
-}
-
-.row a {
-  display: inline-block;
+@media (width >= 768px) {
+  menu {
+    & li {
+      width: 111px;
+      min-height: 40px;
+    }
+  }
 }

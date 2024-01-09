@@ -1,0 +1,43 @@
+@use "../abstracts/variables" as *;
+
+menu {
+  position: absolute;
+}
+
+a {
+  text-decoration: none;
+}
+
+.row a {
+  display: inline-block;
+}
+
+@media (width < 768px) {
+  menu[aria-expanded="false"] {
+    visibility: hidden;
+  }
+
+  menu[aria-expanded="true"] {
+    visibility: visible;
+  }
+}
+
+@media (width >= 768px) {
+  .menuButton {
+    visibility: hidden;
+    position: absolute;
+  }
+  menu {
+    display: flex;
+    position: static;
+    visibility: visible;
+
+    & li {
+      list-style: none;
+
+      &:last-child {
+        background-color: $primary-sRed;
+      }
+    }
+  }
+}
